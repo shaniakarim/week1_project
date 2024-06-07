@@ -9,16 +9,3 @@ document.getElementById('add-data').addEventListener('click', function() {
     li.textContent = text;
     ul.appendChild(li);
 });
-describe('Week 1', () =>{
-    it('should find the ul element', () =>{
-        cy.visit('index.html');
-        cy.get('#my-list').should('exist');
-    });
-    it('should add an item to the list', () => {
-        cy.get('#list-text').type('Test item');
-        cy.get('#add-data').click();
-        cy.get('#my-list').children().should('have.length',1);
-        cy.get('#my-list').children().first().should('have.text','Text item');
-    
-    });
-});
