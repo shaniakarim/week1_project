@@ -2,19 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My List Example</title>
+    <title>Municipality Employment Statistics in Finland</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="heading">Hello world</h1> <!-- ID: heading -->
-    <button id="my-button">Click me</button> <!-- ID: my-button -->
-    <ul id="my-list"></ul> <!-- ID: my-list -->
-    <textarea id="list-text" placeholder="Enter text here"></textarea> <!-- ID: list-text -->
-    <button id="add-data">Add Item</button> <!-- ID: add-data -->
-    <script src="script.js" defer></script>
+    <div class="center">
+        <h1>Municipality Employment Statistics in Finland</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Municipality</th>
+                    <th>Population</th>
+                    <th>Employment Amount</th>
+                    <th>Employment-%</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
 
